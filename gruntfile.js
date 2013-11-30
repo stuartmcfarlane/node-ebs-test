@@ -1,8 +1,21 @@
 module.exports = function(grunt) {
 
-  // A very basic default task.
-  grunt.registerTask('default', 'Log some stuff.', function() {
-    grunt.log.write('Logging some stuff...').ok();
-  });
+    grunt.initConfig({
+        sass: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: 'src/scss',
+                    src: ['*.scss'],
+                    dest: 'public',
+                    ext: '.css'
+                }]
+            }
+        }
+    });
 
+    // grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-sass');
+
+    grunt.registerTask('default', ['sass']);
 };
