@@ -1,3 +1,3 @@
 module.exports = {};
 
-console.log('module');
+document.write('<p>browserify works</p>');
