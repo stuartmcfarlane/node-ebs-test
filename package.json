@@ -6,12 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "install": "grunt"
+    "install": "grunt > public/install.log"
   },
   "author": "",
   "license": "BSD-2-Clause",
   "dependencies": {
     "grunt-cli": "~0.1.11",
-    "grunt": "~0.4.2"
+    "grunt": "~0.4.2",
+    "express": "~3.4.5"
   }
 }

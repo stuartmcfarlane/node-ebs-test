@@ -1,7 +1,19 @@
-var http = require("http");
+var http = require('http');
+var express = require('express');
+var path = require('path');
 
-http.createServer(function(request, response) {
-  response.writeHead(200, {"Content-Type": "text/plain"});
-  response.write("Hello World");
-  response.end();
-}).listen(process.env.PORT || 8888);	
+var app = express();
+
+app.configure(function(){
+  app.set('port', process.env.PORT || 3000);
+  app.use(express.logger('dev'));
+  app.use(express.static(path.join(__dirname, 'public')));
+});
+
+function init() {
+  http.createServer(app).listen(app.get('port'), function(){
+    console.log("Express server listening on port " + app.get('port'));
+  });
+}
+
+init();
