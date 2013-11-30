@@ -14,6 +14,8 @@
     "grunt-cli": "~0.1.11",
     "grunt": "~0.4.2",
     "express": "~3.4.5",
-    "grunt-sass": "~0.8.1"
+    "grunt-sass": "~0.8.1",
+    "browserify": "~2.36.0",
+    "grunt-browserify": "~1.2.11"
   }
 }

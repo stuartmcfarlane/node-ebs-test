@@ -11,11 +11,19 @@ module.exports = function(grunt) {
                     ext: '.css'
                 }]
             }
+        },
+        browserify: {
+            dist: {
+                files: {
+                    'public/test.js': ['src/js/main.js'],
+                }
+            }
         }
     });
 
     // grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-browserify');
 
-    grunt.registerTask('default', ['sass']);
+    grunt.registerTask('default', ['sass', 'browserify']);
 };

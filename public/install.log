@@ -1,4 +1,7 @@
-[4mRunning "default" task[24m
-Logging some stuff...[32mOK[39m
+[4mRunning "sass:dist" (sass) task[24m
+File "public/test.css" created.
+
+[4mRunning "browserify:dist" (browserify) task[24m
+[32m>> [39mBundled public/test.js
 
 [32mDone, without errors.[39m
