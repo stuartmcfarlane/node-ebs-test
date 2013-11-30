@@ -11,6 +11,7 @@
   "author": "",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "grunt-cli": "~0.1.11"
+    "grunt-cli": "~0.1.11",
+    "grunt": "~0.4.2"
   }
 }
