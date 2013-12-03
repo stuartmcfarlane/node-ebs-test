@@ -1,4 +1,5 @@
 .elasticbeanstalk/
+.awscredentials
 node_modules
 public/test.*
 public/install.log

@@ -17,5 +17,9 @@
     "grunt-sass": "~0.8.1",
     "browserify": "~2.36.0",
     "grunt-browserify": "~1.2.11"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-aws": "git+https://github.com/stuartmcfarlane/grunt-aws.git#master"
   }
 }
